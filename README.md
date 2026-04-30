@@ -10,7 +10,7 @@ The program uses a Program Derived Address (PDA) to store the piggy bank state f
 * **Guards**: Logic-level constraints using require! macros to enforce business rules.
 * **CPI**: Uses Cross-Program Invocations to the Solana System Program for secure SOL transfers.
 
-![Project Overview](../image.png)
+![Project Overview](image.png)
 
 ## Features
 
@@ -23,7 +23,7 @@ The program uses a Program Derived Address (PDA) to store the piggy bank state f
     * Overdraft protection ensures the account maintains rent-exempt status.
 * **Account Closure**: Users can close their bank and reclaim all rent-exempt SOL.
 
-![Advanced Experiments](../image2.png)
+![Advanced Experiments](image2.png)
 
 ## Program Information
 
@@ -34,8 +34,16 @@ The program uses a Program Derived Address (PDA) to store the piggy bank state f
 
 The project includes 9 comprehensive tests covering initialization, core functionality, security constraints, and account closure.
 
-### Test Command
+### Test Commands
+You can run the tests using Anchor:
 ```powershell
+cd piggy-bank
+anchor test --skip-local-validator
+```
+
+Or run the test runner directly:
+```powershell
+cd piggy-bank
 yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts
 ```
 
