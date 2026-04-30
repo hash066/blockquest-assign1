@@ -10,7 +10,7 @@ The program uses a Program Derived Address (PDA) to store the piggy bank state f
 * **Guards**: Logic-level constraints using require! macros to enforce business rules.
 * **CPI**: Uses Cross-Program Invocations to the Solana System Program for secure SOL transfers.
 
-![Project Overview](IMAGE_1_PLACEHOLDER)
+![Project Overview](../image.png)
 
 ## Features
 
@@ -23,7 +23,7 @@ The program uses a Program Derived Address (PDA) to store the piggy bank state f
     * Overdraft protection ensures the account maintains rent-exempt status.
 * **Account Closure**: Users can close their bank and reclaim all rent-exempt SOL.
 
-![Advanced Experiments](IMAGE_2_PLACEHOLDER)
+![Advanced Experiments](../image2.png)
 
 ## Program Information
 
